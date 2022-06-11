@@ -17,6 +17,7 @@ if __name__ == "__main__":
 
     path_without_extension = file.create_path_without_extension(path)
     file.write_to(f"{path_without_extension}_encoded.txt", encoded_text)
+    file.write_bin_to(f"{path_without_extension}_encoded.bin", encoded_text)
     file.write_dict_as_yaml_to(f"{path_without_extension}_char-codes.yaml", char_codes)
     file.write_dict_as_yaml_to(
         f"{path_without_extension}_ascii-char-codes.yaml", ascii_char_codes
